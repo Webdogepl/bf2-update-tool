@@ -1,0 +1,19 @@
+{
+  "name": "bfupdater",
+  "version": "1.2.0",
+  "description": "Tool for updating maps to Battlefield 2 from my FTP server",
+  "main": "main.js",
+  "scripts": {
+    "dev": "nodemon --exec npx electron ."
+  },
+  "author": "Webdoge.pl",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^16.0.2"
+  },
+  "dependencies": {
+    "basic-ftp": "^4.6.6",
+    "nodemon": "^2.0.15",
+    "winreg": "^1.2.4"
+  }
+}

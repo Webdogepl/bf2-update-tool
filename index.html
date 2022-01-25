@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self'; script-src 'self'"
+		/>
+		<link href="./styles.css" rel="stylesheet" />
+		<title>BF 2 Update Tool</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="info">
+				<h1 class="BfInfo__title">BF 2 Update Tool</h1>
+				<h4>Install Directory: <span id="install"></span></h4>
+				<h4>Levels Directory: <span id="levels"></span></h4>
+				<h4>Language: <span id="language"></span></h4>
+
+				<h4 class="BfInfo__version">Version: <span id="version"></span></h4>
+				<h4 class="BfInfo__aixCore">AIX Core: <span id="aixCore"></span></h4>
+				<h4 class="BfInfo__aixMaps">AIX Maps: <span id="aixMaps"></span></h4>
+				<h4 class="BfInfo__aixTng1">TNG Part 1: <span id="tng1"></span></h4>
+				<h4 class="BfInfo__aixTng2">TNG Part 2: <span id="tng2"></span></h4>
+				<h4 class="BfInfo__aixIthh">ITHH Map Pack: <span id="ithh"></span></h4>
+				<h4 class="BfInfo__aixWeaponUnlocks">
+					Weapon Unlocks: <span id="weaponUnlocks"></span>
+				</h4>
+			</div>
+			<div class="actions">
+				<button class="btn btn--blue" id="removeIntroButton">
+					Remove intro (faster start)
+				</button>
+				<button class="btn btn--blue" id="installUnlocksButton">
+					Install Weapon Unlocks
+				</button>
+				<button class="btn btn--blue" id="installDirectFixButton">
+					Install alt+tab fix
+				</button>
+				<button class="btn btn--red" id="checkUpdatesButton">
+					Check Updates
+				</button>
+
+				<ul id="BfUpdates"></ul>
+			</div>
+		</div>
+
+		<script src="./renderer.js"></script>
+	</body>
+</html>
