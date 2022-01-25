@@ -2,7 +2,7 @@
 
 ## What it's doing?
 
-I sometimes playing with my friends an old game - Battlefield 2. I'm also creating custom maps/mods or other things to make gameplay more fun.
+I'am sometimes playing with my friends an old game - Battlefield 2. I'm also creating custom maps/mods or other things to make gameplay more fun.
 It was hard to tell each other of my non-technical friends how to install new map or other addon and there was a few mistakes that interrupted our gameplay so I created this app to make my life a bit easier. It's basically install my "updates" with one click.
 
 ## How it exactly works?
