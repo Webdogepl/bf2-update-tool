@@ -1,4 +1,6 @@
 module.exports = async function installUnlocks(installDir) {
+	require("dotenv").config();
+
 	const replaceTextValid = (selector, text) => {
 		const element = document.getElementById(selector);
 		if (element) element.innerHTML = text;
@@ -10,9 +12,9 @@ module.exports = async function installUnlocks(installDir) {
 	client.ftp.verbose = true;
 
 	await client.access({
-		host: " ",
-		user: " ",
-		password: " ",
+		host: process.env.HOST,
+		user: process.env.USER,
+		password: process.env.PASSWORD,
 		secure: false,
 	});
 

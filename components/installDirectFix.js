@@ -1,12 +1,13 @@
 module.exports = async function installDirectFix(installDir) {
+	require("dotenv").config();
 	const ftp = require("basic-ftp");
 	const client = new ftp.Client();
 	client.ftp.verbose = true;
 
 	await client.access({
-		host: " ",
-		user: " ",
-		password: " ",
+		host: process.env.HOST,
+		user: process.env.USER,
+		password: process.env.PASSWORD,
 		secure: false,
 	});
 

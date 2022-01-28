@@ -1,4 +1,5 @@
 module.exports = async function downloadUpdates(comparedFiles, bfInfo) {
+	require("dotenv").config();
 	const fs = require("fs");
 	console.log(comparedFiles);
 
@@ -24,9 +25,9 @@ module.exports = async function downloadUpdates(comparedFiles, bfInfo) {
 		client.ftp.verbose = true;
 
 		await client.access({
-			host: "",
-			user: "",
-			password: "",
+			host: process.env.HOST,
+			user: process.env.USER,
+			password: process.env.PASSWORD,
 			secure: false,
 		});
 

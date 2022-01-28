@@ -1,4 +1,6 @@
 module.exports = async function ftpConnection() {
+	require("dotenv").config();
+
 	const displayMapName = (dirName) => {
 		let BfUpdatesDiv = document.querySelector("ul[id=BfUpdates]");
 		let BfUpdates__level = document.createElement("li");
@@ -15,9 +17,9 @@ module.exports = async function ftpConnection() {
 	let files = [];
 
 	await client.access({
-		host: " ",
-		user: " ",
-		password: " ",
+		host: process.env.HOST,
+		user: process.env.USER,
+		password: process.env.PASSWORD,
 		secure: false,
 	});
 	await client.cd("levels");
